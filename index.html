@@ -1,0 +1,574 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>杨青个人博客- 一个站在web前端设计之路的女技术员个人博客网站</title>
+<meta name="keywords" content="个人博客,杨青个人博客,个人博客模板,杨青" />
+<meta name="description" content="杨青个人博客，是一个站在web前端设计之路的女程序员个人网站，提供个人博客模板免费资源下载的个人原创网站。" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/skin/2017/css/base.css" rel="stylesheet">
+<link href="/skin/2017/css/index.css" rel="stylesheet">
+<link href="/skin/2017/css/m.css" rel="stylesheet" >
+<!--[if lt IE 9]>
+<script src="/skin/2017/js/modernizr.js"></script>
+<![endif]-->
+<script src="/skin/2017/js/scrollReveal.js"></script>
+<!-- 返回顶部调用 begin -->
+<link href="/web/24/css/lrtk.css" rel="stylesheet" />
+<script type="text/javascript" src="/web/24/js/jquery.js"></script>
+<script type="text/javascript" src="/web/24/js/js.js"></script>
+<!-- 返回顶部调用 end-->
+</head>
+<body>
+<header>
+<script>
+window.onload = function ()
+{
+	var oH2 = document.getElementsByTagName("h2")[0];
+	var oUl = document.getElementsByTagName("ul")[0];
+	oH2.onclick = function ()
+	{
+		var style = oUl.style;
+		style.display = style.display == "block" ? "none" : "block";
+		oH2.className = style.display == "block" ? "open" : ""
+	}
+}
+</script>
+<style>
+#mnav { display: none; width: 100%; position: fixed; top: 0; right: 0; }
+#mnav h2 { text-align: right; color: #fff; font-size: 18px; height: 40px; line-height: 40px; padding-left: 10px; width: 100% }
+#mnav h2.open { text-align: right; background: rgba(1,1,1,0.8); width: 100%; }
+#mnav ul { display: none; background: rgba(1,1,1,0.8); width: 100%; padding-bottom:40px}		
+#mnav li {  height: 40px; line-height: 40px; vertical-align: top; font-size: 16px; display: block; overflow: hidden; text-align: center }
+#mnav a:hover { color: #fff;}
+/* 默认= */
+#mnav h2 .navicon { margin-right: 15px; }
+.navicon { display: inline-block; position: relative; width: 30px; height: 5px; background-color: #FFFFFF; }
+.navicon:before, .navicon:after { content: ''; display: block; width: 30px; height: 5px; position: absolute; background: #FFFFFF; -webkit-transition-property: margin, -webkit-transform; transition-property: margin, -webkit-transform; transition-property: margin, transform; transition-property: margin, transform, -webkit-transform; -webkit-transition-duration: 300ms; transition-duration: 300ms; }
+.navicon:before { margin-top: -10px; }
+.navicon:after { margin-top: 10px; }
+/* 展开后导航栏目 */
+#mnav h2.open .navicon { background: rgba(1,1,1,0.8) }/* 使用背景色隐藏中间的红线 */
+#mnav h2.open .navicon:before { margin-top: 0; -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+#mnav h2.open .navicon:after { margin-top: 0; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+#mnav h2.open .navicon:before, #mnav h2.open .navicon:after { content: ''; display: block; width: 30px; height: 5px; position: absolute; background: #FFFFFF; -webkit-transition-property: margin, -webkit-transform; transition-property: margin, -webkit-transform; transition-property: margin, transform; transition-property: margin, transform, -webkit-transform; -webkit-transition-duration: 300ms; transition-duration: 300ms; }
+
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+.logo { margin: 50px 0 20px 0; width: 100% }
+.logo img { margin: auto; width: 80% }
+nav { display: none }
+#mnav { display: block; z-index: 99999; margin-bottom: 30px }
+
+
+
+}
+
+
+
+
+
+
+</style>
+<div id="mnav">
+    <h2><span class="navicon"></span></h2>
+    <ul>
+        <li><a href="/">网站首页</a></li>
+        <li><a href="/about.html">关于我</a></li>
+        <li><a href="/download/">模板分享</a></li>
+        <li><a href="/jstt/">学无止境</a></li>
+        <li><a href="/news/">慢生活</a></li>
+        <li><a href="/link.html">博客导航</a></li>
+        <li><a href="/e/tool/gbook/?bid=3">留言</a></li>
+    </ul>
+</div> 
+
+  <div class="logo"  data-scroll-reveal="enter right over 1s">
+<a href="/"><img src="/skin/2017/images/logo.png"></a></div>
+  <nav class="topnav" >
+<a href="/"><span>首页</span><span class="en">Home</span></a>
+<a href="/about.html"><span>关于我</span><span class="en">About</span></a>
+<a href="/download/" ><span>模板分享</span><span class="en">share</span></a>
+<a href="/jstt/" ><span>学无止境</span><span class="en">Learn</span></a>
+<a href="/news/" ><span>慢生活</span><span class="en">Life</span></a>
+<a href="/link.html" target="_blank"><span>博客导航</span><span class="en">blogs</span></a>
+<a href="/e/tool/gbook/?bid=3"><span>留言</span><span class="en">Saying</span></a>
+</nav>
+</header>
+<article>
+  <div class="container">
+    <div class="blog">
+  
+      <figure>
+        <ul>
+          <a href="/download/div/2018-02-22/798.html" title="html5时尚个人博客模板-技术门户型" target="_blank" ><img src="/d/file/download/div/2018-02-22/d1a7145c2a92931340632d0d64ffe199.jpg"><span>下载个人博客模板</span></a>
+        </ul>
+        <p><a href="/download/div/2018-02-22/798.html" title="html5时尚个人博客模板-技术门户型" target="_blank" >html5时尚个人博客模板-技术门户型</a></p>
+        <figcaption> 这个是功能很全的html5个人博客模板,焦点图动态展示,增加了站内搜索,微信关注.侧栏使用了颜色标签,使网站显得更加活泼.适合偏向技术型与...</figcaption>
+      </figure>
+  
+      <figure>
+        <ul>
+          <a href="/download/div/2017-09-08/789.html" title="html5个人博客模板主题《心蓝时间轴》" target="_blank" ><img src="/d/file/download/div/2017-09-08/f5ac5ea0a98db2907bc80205a5ad132f.jpg"><span>下载个人博客模板</span></a>
+        </ul>
+        <p><a href="/download/div/2017-09-08/789.html" title="html5个人博客模板主题《心蓝时间轴》" target="_blank" >html5个人博客模板主题《心蓝时间轴...</a></p>
+        <figcaption>Html5+css3个人博客模板，主题《心蓝时间轴》，使用css3技术实现网站动画效果，主要模块是时间轴部分.主题颜色为蓝色.目前版本还在测试当...</figcaption>
+      </figure>
+  
+      <figure>
+        <ul>
+          <a href="/download/div/2017-07-16/785.html" title="个人博客模板古典系列之——江南墨卷Html" target="_blank" ><img src="/d/file/download/div/2017-09-08/02e9ac911c571b21a9e3c7227109c912.jpg"><span>下载个人博客模板</span></a>
+        </ul>
+        <p><a href="/download/div/2017-07-16/785.html" title="个人博客模板古典系列之——江南墨卷Html" target="_blank" >个人博客模板古典系列之——江南墨...</a></p>
+        <figcaption>一共是四个页面，首页，图文列表，图片列表，文字内容。此模板风格为中国古典风格，山水画墨迹成就一幅江南墨卷。页面首页设计较为简单，...</figcaption>
+      </figure>
+    
+    </div>
+   <ul class="cbp_tmtimeline">
+	
+
+
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>03-14</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/jstt/css3/2018-03-14/806.html" target="_blank" >用js+css3来写一个手机栏目导航</a></h2>
+          <p><span class="blogpic"><a href="/jstt/css3/2018-03-14/806.html" title="用js+css3来写一个手机栏目导航"><img src="/d/file/jstt/css3/2018-03-14/16860bbd3a76dbb2a37edcfc02368a92.png" alt="用js+css3来写一个手机栏目导航" /></a></span>有些站长说想做一个手机适应的网站,但是导航太难了,如果要使用框架的话,代码非常多,冗余.再用dreamwear打开,那直接就不响应了.我一直都喜欢用简单的代码来实现,js,css3利用的好,同样可以做出好看实用的导航,关键是代码极少.现在我把步骤分享出来...</p>
+          <p><a href="/jstt/css3/2018-03-14/806.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/jstt/css3/" title="css3" target="_blank"  class="classname">css3</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>03-14</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/jstt/css3/2018-03-14/805.html" target="_blank" >6条网页设计配色原则,让你秒变配色高手</a></h2>
+          <p><span class="blogpic"><a href="/jstt/css3/2018-03-14/805.html" title="6条网页设计配色原则,让你秒变配色高手"><img src="/d/file/jstt/css3/2018-03-14/ddf18301abb89953d1fedf8cd1b7fe72.png" alt="6条网页设计配色原则,让你秒变配色高手" /></a></span>网页设计好不好看,颜色是毋庸置疑要排首位的,所以关于颜色的搭配技巧以及原则,对于每一个要学习web前端设计的新手来说,这都是一个重要的学习过程.在本教程中我们将与你分享...</p>
+          <p><a href="/jstt/css3/2018-03-14/805.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/jstt/css3/" title="css3" target="_blank"  class="classname">css3</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>03-13</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/news/life/2018-03-13/804.html" target="_blank" >作为一个设计师,如果遭到质疑你是否能恪守自己的原则?</a></h2>
+          <p><span class="blogpic"><a href="/news/life/2018-03-13/804.html" title="作为一个设计师,如果遭到质疑你是否能恪守自己的原则?"><img src="/d/file/news/life/2018-03-13/e792c4fd2bc0873ac68ef94b83ad2429.jpg" alt="作为一个设计师,如果遭到质疑你是否能恪守自己的原则?" /></a></span>就拿我自己来说吧，有时候会很矛盾，设计好的作品，不把它分享出来，会觉得待在自己电脑里面实在是没有意义。干脆就发布出去吧。我也害怕收到大家不好的评论，有些评论，可能说者无意，但是对于每一个用心的站长来说，都会受很深的影响，愤怒，恼羞。...</p>
+          <p><a href="/news/life/2018-03-13/804.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/news/life/" title="程序人生" target="_blank"  class="classname">程序人生</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>03-12</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/news/life/2018-03-12/803.html" target="_blank" >Come on,行动起来吧!我们和时间来一场赛跑!</a></h2>
+          <p><span class="blogpic"><a href="/news/life/2018-03-12/803.html" title="Come on,行动起来吧!我们和时间来一场赛跑!"><img src="/d/file/news/life/2018-03-12/7b23e40fd0e148e991c6a04b8e9612ab.jpg" alt="Come on,行动起来吧!我们和时间来一场赛跑!" /></a></span>&quot;时间过得那么飞快,使我的小心眼儿里不只是着急,还有悲伤.有一天,我放学回家,看到太阳快落山了,就下决心说:&quot;我要比太阳更快地回家.&quot;我狂奔回去,站在庭院前喘气的时候,看到太...</p>
+          <p><a href="/news/life/2018-03-12/803.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/news/life/" title="程序人生" target="_blank"  class="classname">程序人生</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>03-07</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/jstt/web/2018-03-07/802.html" target="_blank" >野草云怎么样？香港CN2 VPS，美国CERA VPS，香港虚拟主机</a></h2>
+          <p><span class="blogpic"><a href="/jstt/web/2018-03-07/802.html" title="野草云怎么样？香港CN2 VPS，美国CERA VPS，香港虚拟主机"><img src="/d/file/jstt/web/2018-03-07/d5f683d486689a1bf0012fdacc49e3e9.jpg" alt="野草云怎么样？香港CN2 VPS，美国CERA VPS，香港虚拟主机" /></a></span>许多小伙伴都愁于建站备案等一系列繁琐的事情,加上等待周期较长,至少都要十天左右,所以选择了国外空间.前段时间有一网友要做模板,着急马上就要做好,他说他要买香港空间,我还挺担心他选择香港空间,会影响传数据什么的.结果后来事实证明,我的担心是多余的....</p>
+          <p><a href="/jstt/web/2018-03-07/802.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/jstt/web/" title="网站建设" target="_blank"  class="classname">网站建设</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>02-22</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/download/div/2018-02-22/798.html" target="_blank" >html5时尚个人博客模板-技术门户型</a></h2>
+          <p><span class="blogpic"><a href="/download/div/2018-02-22/798.html" title="html5时尚个人博客模板-技术门户型"><img src="/d/file/download/div/2018-02-22/d1a7145c2a92931340632d0d64ffe199.jpg" alt="html5时尚个人博客模板-技术门户型" /></a></span> 这个是功能很全的html5个人博客模板,焦点图动态展示,增加了站内搜索,微信关注.侧栏使用了颜色标签,使网站显得更加活泼.适合偏向技术型与门户型的站长...</p>
+          <p><a href="/download/div/2018-02-22/798.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/download/div/" title="原创个人博客模板" target="_blank"  class="classname">原创个人博客模板</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>09-08</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/download/div/2017-09-08/789.html" target="_blank" >html5个人博客模板主题《心蓝时间轴》</a></h2>
+          <p><span class="blogpic"><a href="/download/div/2017-09-08/789.html" title="html5个人博客模板主题《心蓝时间轴》"><img src="/d/file/download/div/2017-09-08/f5ac5ea0a98db2907bc80205a5ad132f.jpg" alt="html5个人博客模板主题《心蓝时间轴》" /></a></span>Html5+css3个人博客模板，主题《心蓝时间轴》，使用css3技术实现网站动画效果，主要模块是时间轴部分.主题颜色为蓝色.目前版本还在测试当中,喜欢的可以先下载...</p>
+          <p><a href="/download/div/2017-09-08/789.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/download/div/" title="原创个人博客模板" target="_blank"  class="classname">原创个人博客模板</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>08-08</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/jstt/css3/2017-08-08/787.html" target="_blank" >三步实现滚动条触动css动画效果</a></h2>
+          <p><span class="blogpic"><a href="/jstt/css3/2017-08-08/787.html" title="三步实现滚动条触动css动画效果"><img src="/d/file/jstt/css3/2017-08-08/a1fbdb8105f82ea04993f2dbbeacf29a.jpg" alt="三步实现滚动条触动css动画效果" /></a></span>现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</p>
+          <p><a href="/jstt/css3/2017-08-08/787.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/jstt/css3/" title="css3" target="_blank"  class="classname">css3</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>07-16</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/download/div/2017-07-16/785.html" target="_blank" >个人博客模板古典系列之——江南墨卷Html</a></h2>
+          <p><span class="blogpic"><a href="/download/div/2017-07-16/785.html" title="个人博客模板古典系列之——江南墨卷Html"><img src="/d/file/download/div/2017-09-08/02e9ac911c571b21a9e3c7227109c912.jpg" alt="个人博客模板古典系列之——江南墨卷Html" /></a></span>一共是四个页面，首页，图文列表，图片列表，文字内容。此模板风格为中国古典风格，山水画墨迹成就一幅江南墨卷。页面首页设计较为简单，突出文章重点。二级栏目导航菜单。图文列表显示，可用作相册展示，有鼠标滑过放大的效果。...</p>
+          <p><a href="/download/div/2017-07-16/785.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/download/div/" title="原创个人博客模板" target="_blank"  class="classname">原创个人博客模板</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>07-13</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/jstt/bj/2017-07-13/784.html" target="_blank" >【心路历程】请不要在设计这条路上徘徊啦</a></h2>
+          <p><span class="blogpic"><a href="/jstt/bj/2017-07-13/784.html" title="【心路历程】请不要在设计这条路上徘徊啦"><img src="/d/file/jstt/bj/2017-07-13/1ba28e77a69208501de15d82eafe7431.jpg" alt="【心路历程】请不要在设计这条路上徘徊啦" /></a></span> 我整理了一下网友给我的来信，如果你还在踌躇不前，不妨来看看，到底要不要坚持下去！我也欢迎大家给我来信，希望能帮到更多人。...</p>
+          <p><a href="/jstt/bj/2017-07-13/784.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/jstt/bj/" title="心得笔记" target="_blank"  class="classname">心得笔记</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>06-28</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/download/div/2015-06-28/748.html" target="_blank" >个人博客《草根寻梦》—手机版模板</a></h2>
+          <p><span class="blogpic"><a href="/download/div/2015-06-28/748.html" title="个人博客《草根寻梦》—手机版模板"><img src="http://www.yangqq.com/d/file/download/div/2015-06-28/c634c5e6111938d024804f018f5558b7.jpg" alt="个人博客《草根寻梦》—手机版模板" /></a></span>把帝国7.0系统升级到最新版本7.2，7.2版本主要是增加了一个多终端的功能，于是琢磨着做一个手机模板出来看看，在现在的模板基础上稍微改动的。使用电脑的朋友可以直接访问m.yangqq.com <br />
+...</p>
+          <p><a href="/download/div/2015-06-28/748.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/download/div/" title="原创个人博客模板" target="_blank"  class="classname">原创个人博客模板</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>04-10</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/download/div/2015-04-10/746.html" target="_blank" >【活动作品】柠檬绿兔小白个人博客模板</a></h2>
+          <p><span class="blogpic"><a href="/download/div/2015-04-10/746.html" title="【活动作品】柠檬绿兔小白个人博客模板"><img src="/d/file/download/div/2015-04-10/7d49c3bc8c69c01ece56611f5a7148be.png" alt="【活动作品】柠檬绿兔小白个人博客模板" /></a></span>展示的是首页html，博客页面布局格式简单，没有复杂的背景，色彩局部点缀，动态的幻灯片展示，切换卡，标签云...此作品设计图作者窦耀宇...</p>
+          <p><a href="/download/div/2015-04-10/746.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/download/div/" title="原创个人博客模板" target="_blank"  class="classname">原创个人博客模板</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>01-09</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/jstt/bj/2015-01-09/740.html" target="_blank" >【匆匆那些年】总结个人博客经历的这四年…</a></h2>
+          <p><span class="blogpic"><a href="/jstt/bj/2015-01-09/740.html" title="【匆匆那些年】总结个人博客经历的这四年…"><img src="/d/file/jstt/bj/2015-01-09/1d7c3211eba65ca6b328d7f28e10ecc6.jpg" alt="【匆匆那些年】总结个人博客经历的这四年…" /></a></span>博客从最初的域名购买，到上线已经有四年的时间了，这四年的时间，有笑过，有怨过，有悔过，有执着过，也有放弃过…但最后还是坚持了下来，时间如此匆匆，等再回过头已来不及去弥补...</p>
+          <p><a href="/jstt/bj/2015-01-09/740.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/jstt/bj/" title="心得笔记" target="_blank"  class="classname">心得笔记</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>12-09</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/jstt/css3/2014-12-09/734.html" target="_blank" >使用CSS3制作文字、图片倒影</a></h2>
+          <p><span class="blogpic"><a href="/jstt/css3/2014-12-09/734.html" title="使用CSS3制作文字、图片倒影"><img src="/d/file/jstt/css3/2014-12-09/1cba05d9e0c7cfcfa897394b85f7e5f9.jpg" alt="使用CSS3制作文字、图片倒影" /></a></span>CSS3制作文字、图片倒影需要涉及到使用CSS3.0新属性之box-reflect。box-reflect属性目前仅在Chrome、Safari和Opera浏览器下支持，但这并不影响我们来学习这个属性的应用。...</p>
+          <p><a href="/jstt/css3/2014-12-09/734.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/jstt/css3/" title="css3" target="_blank"  class="classname">css3</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>11-06</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/jstt/bj/2014-11-06/732.html" target="_blank" >分享我的个人博客访问量如何做到IP从10到600的(图文)</a></h2>
+          <p><span class="blogpic"><a href="/jstt/bj/2014-11-06/732.html" title="分享我的个人博客访问量如何做到IP从10到600的(图文)"><img src="/d/file/jstt/bj/2014-11-06/e45c61e63ef00078e2a594d7bfbe4cbb.jpg" alt="分享我的个人博客访问量如何做到IP从10到600的(图文)" /></a></span>我的个人博客总共展示了三个版本，界面也经历了由“简单”到“复杂”再到“简单”，颜色从“色泽单一”到“五彩斑斓”再到“局部点缀”的过程。原来一年一个版本！而每次改版的契机都是被百度惩罚！界面不要频繁更换！好好检查代码，有没有冗余、结构有没有不合理的地方。...</p>
+          <p><a href="/jstt/bj/2014-11-06/732.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/jstt/bj/" title="心得笔记" target="_blank"  class="classname">心得笔记</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>10-18</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/jstt/bj/2014-10-18/731.html" target="_blank" >帝国cms常用标签调用方法总结（不得不收藏哦）</a></h2>
+          <p><span class="blogpic"><a href="/jstt/bj/2014-10-18/731.html" title="帝国cms常用标签调用方法总结（不得不收藏哦）"><img src="/d/file/jstt/bj/2014-10-18/a0b65d3d8160f90f6556c4dfa3a85a59.jpg" alt="帝国cms常用标签调用方法总结（不得不收藏哦）" /></a></span>整理了一些常用的帝国cms调用，灵动标签和万能标签的调用方法举例。幻灯片、标题、一级栏目、二级栏目、带模版的友情链接（下拉菜单）、判断内容页字段为空时是如何调用的等等...新手可以借鉴学习。...</p>
+          <p><a href="/jstt/bj/2014-10-18/731.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/jstt/bj/" title="心得笔记" target="_blank"  class="classname">心得笔记</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>09-18</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/download/div/2014-09-18/730.html" target="_blank" >情侣博客模板系列之《回忆》Html</a></h2>
+          <p><span class="blogpic"><a href="/download/div/2014-09-18/730.html" title="情侣博客模板系列之《回忆》Html"><img src="/d/file/download/div/2014-09-18/a79ec800b99c6348be21f17b0364621b.jpg" alt="情侣博客模板系列之《回忆》Html" /></a></span>Html5+css3情侣博客模板，主题《回忆》，使用css3技术实现网站动画效果，主题《回忆》,分为四个主要部分，照片墙、情侣介绍、图文组、祝福模块。...</p>
+          <p><a href="/download/div/2014-09-18/730.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/download/div/" title="原创个人博客模板" target="_blank"  class="classname">原创个人博客模板</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>08-11</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/download/div/2014-08-11/726.html" target="_blank" >情侣博客模板系列之《初夏》Html</a></h2>
+          <p><span class="blogpic"><a href="/download/div/2014-08-11/726.html" title="情侣博客模板系列之《初夏》Html"><img src="/d/file/download/div/2014-08-11/a0fdaddb02589193917cc8c239aca5cb.gif" alt="情侣博客模板系列之《初夏》Html" /></a></span>这套情侣博客模板，展示的是首页html，应用到css动画技术、实现文字从右到左逐渐显示的效果，以及时间轴的动画显示效果。...</p>
+          <p><a href="/download/div/2014-08-11/726.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/download/div/" title="原创个人博客模板" target="_blank"  class="classname">原创个人博客模板</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>06-28</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/jstt/css3/2014-06-28/698.html" target="_blank" >有创意的鼠标悬停效果集锦</a></h2>
+          <p><span class="blogpic"><a href="/jstt/css3/2014-06-28/698.html" title="有创意的鼠标悬停效果集锦"><img src="/d/file/jstt/css3/2014-06-28/8438184fe2ec592f7f9e14dc8a410fe8.jpg" alt="有创意的鼠标悬停效果集锦" /></a></span>分享一些用css3技术，三维、伪元素实现一些有创意的悬停效果...</p>
+          <p><a href="/jstt/css3/2014-06-28/698.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/jstt/css3/" title="css3" target="_blank"  class="classname">css3</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>05-12</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/jstt/css3/2014-05-12/664.html" target="_blank" >关于响应式Web设计技巧以及入门</a></h2>
+          <p><span class="blogpic"><a href="/jstt/css3/2014-05-12/664.html" title="关于响应式Web设计技巧以及入门"><img src="/d/file/download/div/2014-04-17/a5d40a42129d1a1e1099d62a20bc0fc1.jpg" alt="关于响应式Web设计技巧以及入门" /></a></span>html5和css3流行至今，我在做响应式的网站一直是在“尝试”的阶段。并没有深入的去研究和学习，浅显的理解就是根据屏幕分辨率的大小，网站布局、图片、文字大小等相应改变。以后使用平板、手机浏览网站的用户会越来越多，对于前端设计师，学号用html5、css3做响应式网站是势在必行。...</p>
+          <p><a href="/jstt/css3/2014-05-12/664.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/jstt/css3/" title="css3" target="_blank"  class="classname">css3</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>04-17</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/download/div/2014-04-17/661.html" target="_blank" >黑色Html5个人博客模板主题《如影随形》</a></h2>
+          <p><span class="blogpic"><a href="/download/div/2014-04-17/661.html" title="黑色Html5个人博客模板主题《如影随形》"><img src="/d/file/download/div/2014-04-17/a2639eb071954b04af89da2f4364b065.jpg" alt="黑色Html5个人博客模板主题《如影随形》" /></a></span>014第二版黑色Html5个人博客模板主题《如影随形》，如精灵般的影子会给人一种神秘的感觉。一张剪影图黑白搭配，如果整个网站用黑白灰三色，会显得比较太过沉重，于是，在选择亮色方面，用以红为主色，蓝为辅色。这样就铺上了一些神秘甚至有些俏皮的元素。...</p>
+          <p><a href="/download/div/2014-04-17/661.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/download/div/" title="原创个人博客模板" target="_blank"  class="classname">原创个人博客模板</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>02-19</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/download/div/2014-02-19/649.html" target="_blank" > 个人博客模板（2014草根寻梦）</a></h2>
+          <p><span class="blogpic"><a href="/download/div/2014-02-19/649.html" title=" 个人博客模板（2014草根寻梦）"><img src="/d/file/download/div/2014-02-19/841b8f28053565519b4ba202a17fc296.jpg" alt=" 个人博客模板（2014草根寻梦）" /></a></span>2014第一版《草根寻梦》个人博客模板简单、优雅、稳重、大气、低调。专为年轻有志向却又低调的草根站长设计。模板采用html5+css3设计，nav导航实现鼠标悬停渐变显示英文标题的效果。banner部分，选择大图作为背景，利用css3中animation属性结合文字图片实现文字从左到右的渐变效果...</p>
+          <p><a href="/download/div/2014-02-19/649.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/download/div/" title="原创个人博客模板" target="_blank"  class="classname">原创个人博客模板</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>01-22</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/download/div/2014-01-22/647.html" target="_blank" >响应式个人博客模板（蓝色清新）</a></h2>
+          <p><span class="blogpic"><a href="/download/div/2014-01-22/647.html" title="响应式个人博客模板（蓝色清新）"><img src="/d/file/download/div/2014-01-22/15025aa222e4bf3b449336ca058aefd1.jpg" alt="响应式个人博客模板（蓝色清新）" /></a></span>响应式个人博客模板，只有首页展示和下载，仅供学习参考。响应式网页已经流行很长时间了，有利有弊，不过作为web设计师，可以尝试尝试，分享一个蓝色清新个人博客首页模板。简单的两栏布局，重点突出在于banner的设计。博主头像、以及鼠标悬停效果。...</p>
+          <p><a href="/download/div/2014-01-22/647.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/download/div/" title="原创个人博客模板" target="_blank"  class="classname">原创个人博客模板</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>01-18</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/jstt/web/2014-01-18/644.html" target="_blank" >我的个人博客之——阿里云空间选择</a></h2>
+          <p><span class="blogpic"><a href="/jstt/web/2014-01-18/644.html" title="我的个人博客之——阿里云空间选择"><img src="/d/file/jstt/web/2014-01-18/6fe49814982f3624e441334fea1999a4.png" alt="我的个人博客之——阿里云空间选择" /></a></span>之前服务器放在电信机房， 联通用户访问速度很不稳定，经常出现访问速度慢的问题，换到阿里云解决了之前的问题。很多人都问我的博客选得什么空间，一年的费用得多少钱，今天我列个表出来，供大家参考。...</p>
+          <p><a href="/jstt/web/2014-01-18/644.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/jstt/web/" title="网站建设" target="_blank"  class="classname">网站建设</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>01-09</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/jstt/bj/2014-01-09/637.html" target="_blank" >从摄影作品中获取网页颜色搭配技巧</a></h2>
+          <p><span class="blogpic"><a href="/jstt/bj/2014-01-09/637.html" title="从摄影作品中获取网页颜色搭配技巧"><img src="/d/file/jstt/bj/2014-01-09/9b5abf501a88ea5d80c3ccd9978358c9.jpg" alt="从摄影作品中获取网页颜色搭配技巧" /></a></span>作为一个优秀、专业的网页设计师，首先要了解各种颜色的象征，以及不同类型网站常用的色彩搭配。色彩搭配看似复杂,但并不神秘。一般来说,网页的背景色应该柔和一些、素一些、淡一些,再配上深色的文字,使人看起来自然、舒畅。色彩是人的视觉最敏感的东西。主页的色彩处理得好，可以锦上添花，达到事半功倍的效果。...</p>
+          <p><a href="/jstt/bj/2014-01-09/637.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/jstt/bj/" title="心得笔记" target="_blank"  class="classname">心得笔记</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>11-28</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/download/div/2013-11-28/626.html" target="_blank" >仿新浪博客风格·梅——古典个人博客模板</a></h2>
+          <p><span class="blogpic"><a href="/download/div/2013-11-28/626.html" title="仿新浪博客风格·梅——古典个人博客模板"><img src="/d/file/download/div/2013-11-28/b121b0f8dac5caedcd611c82e65146f5.jpg" alt="仿新浪博客风格·梅——古典个人博客模板" /></a></span>界面设计非原创，出自新浪博客风格·梅作者水云心。在原来的设计上增加了梅花飘落的flash动画。原设计的边界阴影部分用图片实现，本例采用css3新的规则属性，box-shadow。...</p>
+          <p><a href="/download/div/2013-11-28/626.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/download/div/" title="原创个人博客模板" target="_blank"  class="classname">原创个人博客模板</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>08-19</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/jstt/css3/2013-08-19/598.html" target="_blank" >使用css3伪元素制作时间轴并且实现鼠标选中高亮效果</a></h2>
+          <p><span class="blogpic"><a href="/jstt/css3/2013-08-19/598.html" title="使用css3伪元素制作时间轴并且实现鼠标选中高亮效果"><img src="/d/file/newshtml5/css3/2013-08-19/8f09560ba90f3ec3937de2f152a12087.jpg" alt="使用css3伪元素制作时间轴并且实现鼠标选中高亮效果" /></a></span>利用css来制作时间轴的知识要点：伪元素，以及如何在伪元素上添加锚伪类1）:before	在元素之前添加内容。2）:after在元素之后添加内容。提示：亦可写成 :before :after CSS3将伪对象选择符前面的单个冒号(:)修改为双冒号(::)用以区别伪类选择符，但以前的写法仍然有效。...</p>
+          <p><a href="/jstt/css3/2013-08-19/598.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/jstt/css3/" title="css3" target="_blank"  class="classname">css3</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>08-08</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/download/div/2013-08-08/571.html" target="_blank" >黑色质感时间轴html5个人博客模板</a></h2>
+          <p><span class="blogpic"><a href="/download/div/2013-08-08/571.html" title="黑色质感时间轴html5个人博客模板"><img src="/d/file/download/div/2013-08-08/94957c7c2a7bf38bc9e1b75415513ba0.jpg" alt="黑色质感时间轴html5个人博客模板" /></a></span>黑色时间轴html5个人博客模板颜色以黑色为主色，添加了彩色作为网页的一个亮点，导航高亮显示、banner图片鼠标划过，可以看到隐藏的文字。css3动画应用在banner和右边“我的名片”个人信息。重点在时间轴部分，三角形和圆形均是css代码写出来的，postion定位，增加页面返回到顶部的代码.......</p>
+          <p><a href="/download/div/2013-08-08/571.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/download/div/" title="原创个人博客模板" target="_blank"  class="classname">原创个人博客模板</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>07-28</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/jstt/bj/2013-07-28/530.html" target="_blank" >如果要学习web前端开发，需要学习什么？</a></h2>
+          <p><span class="blogpic"><a href="/jstt/bj/2013-07-28/530.html" title="如果要学习web前端开发，需要学习什么？"><img src="/d/file/jstt/bj/2014-07-10/12fe709dc83e1a0dfec44f7dca0355ac.jpg" alt="如果要学习web前端开发，需要学习什么？" /></a></span>遇到很多新手，都会问，如果要学习web前端开发，需要学习什么？难不难？多久能入门？怎么能快速建一个网站？工资能拿到多少？还有些让我推荐一些培训机构什么的要去学习。我建议是自学，实在是觉得自己没有这个能力，确实是需要一个老师的话，那你还是自己做主找个老师吧！...</p>
+          <p><a href="/jstt/bj/2013-07-28/530.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/jstt/bj/" title="心得笔记" target="_blank"  class="classname">心得笔记</a>
+          </p>
+</div>
+      </li>
+
+
+
+<li>
+        <time class="cbp_tmtime"><span>Time</span> <span>07-19</span></time>
+        <div class="cbp_tmicon"></div>
+        <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s" >
+          <h2><a href="/download/div/2013-07-19/394.html" target="_blank" >Green绿色小清新的夏天-个人博客模板</a></h2>
+          <p><span class="blogpic"><a href="/download/div/2013-07-19/394.html" title="Green绿色小清新的夏天-个人博客模板"><img src="/d/file/download/div/2013-07-19/65dc0c3937f85587f7009a69355a8368.jpg" alt="Green绿色小清新的夏天-个人博客模板" /></a></span>这是一个有关Green绿色小清新的夏天的css3 html5绿色个人博客网站模板，导航下面的效果使用了CSS3 Animation 实现对象从右到左渐变的动画效果。...</p>
+          <p><a href="/download/div/2013-07-19/394.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a> 
+              <a href="/download/div/" title="原创个人博客模板" target="_blank"  class="classname">原创个人博客模板</a>
+          </p>
+</div>
+      </li>
+
+
+
+				</ul>
+  </div>
+</article>
+
+<div id="tbox"> <a id="togbook" href="/e/tool/gbook/?bid=1"></a> <a id="gotop" href="javascript:void(0)"></a> </div>
+<footer>
+Design by DanceSmile <a href="www.miitbeian.gov.cn/" target="_blank">蜀ICP备11002373号-1</a>
+</footer>
+<script>
+	if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+		(function(){
+			window.scrollReveal = new scrollReveal({reset: true});
+		})();
+	};
+</script> 
+</body>
+</html>
+
